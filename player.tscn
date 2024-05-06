@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=3 uid="uid://dvxt2luuee87y"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_211bv"]
+[ext_resource type="Texture2D" uid="uid://reh3fucvgxfn" path="res://sprites/player/idle/sprite_idle1.png" id="1_ns5b3"]
+[ext_resource type="Texture2D" uid="uid://bhx6gkm6dwaws" path="res://sprites/player/idle/sprite_idle0.png" id="2_5x5eg"]
+[ext_resource type="Texture2D" uid="uid://dcywhafsg0tgd" path="res://sprites/player/run/sprite_run0.png" id="3_nbrvs"]
+[ext_resource type="Texture2D" uid="uid://cx1fie0ykoibc" path="res://sprites/player/jump/sprite_jump0.png" id="4_kygsc"]
+[ext_resource type="Texture2D" uid="uid://dvy537olyn8dy" path="res://sprites/player/run/sprite_run1.png" id="4_rxhn3"]
+[ext_resource type="Texture2D" uid="uid://c6b0y37k08bt6" path="res://sprites/player/jump/sprite_jump1.png" id="5_cth4o"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_prtv1"]
+radius = 32.0
+height = 76.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yxxuj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5x5eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_ns5b3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_kygsc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cth4o")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nbrvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rxhn3")
+}],
+"loop": true,
+"name": &"run",
+"speed": 7.0
+}]
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(-86, 112)
+scale = Vector2(0.75, 0.75)
+collision_layer = 3
+script = ExtResource("1_211bv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Player"]]
+position = Vector2(-3, 12)
+shape = SubResource("CapsuleShape2D_prtv1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_yxxuj")
+animation = &"idle"
+frame_progress = 0.526931

@@ -1,0 +1,9 @@
+res://player.tscn
+res://world_tiles.tres
+res://world.tscn
+res://stage_1.tscn
+res://stage_2.tscn
+res://stage_3.tscn
+res://area_trigger.tscn
+res://you_win.tscn
+res://miniboss.tscn

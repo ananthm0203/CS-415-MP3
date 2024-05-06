@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://j3aj4y64w7v5"]
+
+[ext_resource type="Script" path="res://miniboss.gd" id="1_hy5iu"]
+[ext_resource type="Texture2D" uid="uid://c4n1vavibeqjf" path="res://sprites/boss/sprite_boss0.png" id="1_j10xg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tq1i5"]
+size = Vector2(124, 124)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d2r6h"]
+bg_color = Color(0.533333, 0.0313726, 0.0313726, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m7vq3"]
+bg_color = Color(0.196078, 0.803922, 0.196078, 1)
+
+[node name="Enemy" type="Area2D"]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_hy5iu")
+
+[node name="SpriteBoss0" type="Sprite2D" parent="."]
+position = Vector2(-5, -1)
+texture = ExtResource("1_j10xg")
+
+[node name="ShotTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="BurstTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 1)
+shape = SubResource("RectangleShape2D_tq1i5")
+
+[node name="RushTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Health" type="ProgressBar" parent="."]
+offset_left = -45.0
+offset_top = -84.0
+offset_right = 44.0
+offset_bottom = -68.0
+theme_override_styles/background = SubResource("StyleBoxFlat_d2r6h")
+theme_override_styles/fill = SubResource("StyleBoxFlat_m7vq3")
+step = 1.0
+show_percentage = false
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="ShotTimer" to="." method="_on_shot_timer_timeout"]
+[connection signal="timeout" from="BurstTimer" to="." method="_on_burst_timer_timeout"]
+[connection signal="timeout" from="RushTimer" to="." method="_on_rush_timer_timeout"]

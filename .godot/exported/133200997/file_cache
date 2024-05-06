@@ -1,0 +1,12 @@
+res://area_trigger.tscn::f748817adb9329e39bde933b6f170fa2::1714881774::res://.godot/exported/133200997/export-4c8ee61f951e8240a8b1c16185d90ac4-area_trigger.scn
+res://miniboss.tscn::7efaa088f2238c36e3a3a3178ff4f2a0::1714881774::res://.godot/exported/133200997/export-179c2aba948ec1a8cfef882c858c1832-miniboss.scn
+res://player.tscn::2b4b166b20fbfa12c7f81ee92bcdd246::1714881773::res://.godot/exported/133200997/export-36a25e342948d0ceacc500772b5412b3-player.scn
+res://powerup.tscn::63e501815206f7ff622d381d037b655e::1714638546::res://.godot/exported/133200997/export-cc072762f388e09eaf9ed13f74a04dcd-powerup.scn
+res://projectile.tscn::52d0999623ff75dccade088a0650e224::1714638546::res://.godot/exported/133200997/export-91c8f3c00cb04423be3420503ec3abc7-projectile.scn
+res://spikes.tscn::003b40809c9dbc415832b9751adeccab::1714638546::res://.godot/exported/133200997/export-344b4c4c1acb4ad5c4770663469a80ec-spikes.scn
+res://stage_1.tscn::18d6947715b31c2f7af6494a8b6c4a7e::1714881773::res://.godot/exported/133200997/export-c9da8081b103f8e0c968d0996c6ff177-stage_1.scn
+res://stage_2.tscn::202e1201f499adc361bc51a9b82bb153::1714881817::res://.godot/exported/133200997/export-00194acfd86d5c584161465c1c6762c2-stage_2.scn
+res://stage_3.tscn::89eba907b152a6e5bb820a818d694d72::1714881774::res://.godot/exported/133200997/export-22df7da5a26f2cc89c9974a638e67012-stage_3.scn
+res://world.tscn::cd09e70ce7e0392a4df31a18d10230d4::1714881773::res://.godot/exported/133200997/export-76e0adcbc83681695885bae615f516ae-world.scn
+res://world_tiles.tres::a8e955235381a775676c7f5eba5ea660::1714878720::res://.godot/exported/133200997/export-afd67ec4405b96058d8b69d31610ddd6-world_tiles.res
+res://you_win.tscn::12a4fd4245d51211765c4fcdf547ec79::1714881774::res://.godot/exported/133200997/export-5b801698b5f67cbc90fc9a22c524aa34-you_win.scn

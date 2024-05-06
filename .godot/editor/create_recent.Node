@@ -1,0 +1,12 @@
+TextureRect
+Sprite2D
+TileMap
+CollisionShape2D
+Area2D
+ProgressBar
+AnimatedSprite2D
+Timer
+Node
+CollisionPolygon2D
+CharacterBody2D
+Node2D

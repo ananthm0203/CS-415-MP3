@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://7i7b5cg382p3"]
+
+[ext_resource type="Texture2D" uid="uid://din004s01hxea" path="res://sprites/Win.png" id="1_g1rho"]
+
+[sub_resource type="Gradient" id="Gradient_ul1f2"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4grtq"]
+gradient = SubResource("Gradient_ul1f2")
+fill_from = Vector2(1, 0.042735)
+fill_to = Vector2(0.0128205, 0.880342)
+
+[node name="YouWin" type="Node2D"]
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1150.0
+offset_bottom = 646.0
+texture = SubResource("GradientTexture2D_4grtq")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 236.0
+offset_top = 2.0
+offset_right = 963.0
+offset_bottom = 648.0
+texture = ExtResource("1_g1rho")
+expand_mode = 1
