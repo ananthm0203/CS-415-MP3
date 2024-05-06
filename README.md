@@ -13,4 +13,5 @@ A simple platformer following the following criteria:
 # Running on Localhost
 
 To run, `cd export` and run `python http_server.py`. Then, just open `http://localhost:8000/CS415Final.html` in a browser and enjoy :)
+
 Note: 8000 is the default port, you can supply an argument to change it.
